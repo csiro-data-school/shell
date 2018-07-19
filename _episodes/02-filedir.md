@@ -28,7 +28,7 @@ keypoints:
 
 The part of the operating system responsible for managing files and directories 
 is called the **file system**.
-It organizes our data into files,
+It organises our data into files,
 which hold information,
 and directories (also called "folders"),
 which hold files or other directories.
@@ -398,14 +398,14 @@ the shell thinks we're trying to run a command called `ls-F`,
 which doesn't exist.
 
 We can also use `ls` to see the contents of a different directory.  Let's take a
-look at our `Desktop` directory by running `ls -F Desktop`,
+look at our `DATASCHOOL` directory by running `ls -F DATASCHOOL`,
 i.e.,
-the command `ls` with the `-F` **flag** and the **argument**  `Desktop`.
-The argument `Desktop` tells `ls` that
+the command `ls` with the `-F` **flag** and the **argument**  `DATASCHOOL`.
+The argument `DATASCHOOL` tells `ls` that
 we want a listing of something other than our current working directory:
 
 ~~~
-$ ls -F Desktop
+$ ls -F DATASCHOOL
 ~~~
 {: .language-bash}
 
@@ -414,9 +414,9 @@ data-shell/
 ~~~
 {: .output}
 
-Your output should be a list of all the files and sub-directories on your
-Desktop, including the `data-shell` directory you downloaded at
-the [setup for this lesson]({{ page.root }}{% link setup.md %}).  Take a look at your Desktop to confirm that
+Your output should be a list of all the files and sub-directories within
+`DATASCHOOL`, i.e. the `data-shell` directory you downloaded at
+the [setup for this lesson]({{ page.root }}{% link setup.md %}).  Take a look at your `DATASCHOOL` folder to confirm that
 your output is accurate.  
 
 As you may now see, using a bash shell is strongly dependent on the idea that
@@ -426,14 +426,14 @@ it's possible to put hundreds of files in our home directory,
 just as it's possible to pile hundreds of printed papers on our desk,
 but it's a self-defeating strategy.
 
-Now that we know the `data-shell` directory is located on our Desktop, we
+Now that we know the `data-shell` directory is located within `DATASCHOOL`, we
 can do two things.  
 
 First, we can look at its contents, using the same strategy as before, passing
 a directory name to `ls`:
 
 ~~~
-$ ls -F Desktop/data-shell
+$ ls -F DATASCHOOL/data-shell
 ~~~
 {: .language-bash}
 
@@ -458,18 +458,18 @@ Let's say we want to move to the `data` directory we saw above.  We can
 use the following series of commands to get there:
 
 ~~~
-$ cd Desktop
+$ cd DATASCHOOL
 $ cd data-shell
 $ cd data
 ~~~
 {: .language-bash}
 
-These commands will move us from our home directory onto our Desktop, then into
+These commands will move us from our home directory into `DATASCHOOL`, then into
 the `data-shell` directory, then into the `data` directory.  `cd` doesn't print anything,
 but if we run `pwd` after it, we can see that we are now
-in `/Users/nelle/Desktop/data-shell/data`.
+in `/Users/nelle/DATASCHOOL/data-shell/data`.
 If we run `ls` without arguments now,
-it lists the contents of `/Users/nelle/Desktop/data-shell/data`,
+it lists the contents of `/Users/nelle/DATASCHOOL/data-shell/data`,
 because that's where we now are:
 
 ~~~
@@ -478,7 +478,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell/data
+/Users/nelle/DATASCHOOL/data-shell/data
 ~~~
 {: .output}
 
@@ -526,7 +526,7 @@ $ cd ..
 or more succinctly,
 the **parent** of the current directory.
 Sure enough,
-if we run `pwd` after running `cd ..`, we're back in `/Users/nelle/Desktop/data-shell`:
+if we run `pwd` after running `cd ..`, we're back in `/Users/nelle/DATASCHOOL/data-shell`:
 
 ~~~
 $ pwd
@@ -534,7 +534,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell
+/Users/nelle/DATASCHOOL/data-shell
 ~~~
 {: .output}
 
@@ -619,7 +619,7 @@ three commands, but we can actually string together the list of directories
 to move to `data` in one step:
 
 ~~~
-$ cd Desktop/data-shell/data
+$ cd DATASCHOOL/data-shell/data
 ~~~
 {: .language-bash}
 
@@ -651,7 +651,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell/data
+/Users/nelle/DATASCHOOL/data-shell/data
 ~~~
 {: .output}
 

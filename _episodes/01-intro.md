@@ -1,7 +1,7 @@
 ---
 title: "Introducing the Shell"
-teaching: 5
-exercises: 0
+teaching: 15
+exercises: 3
 questions:
 - "What is a command shell and why would I use one?"
 objectives:
@@ -26,8 +26,11 @@ At a high level, computers do four things:
 -   communicate with each other, and
 -   interact with us
 
+> ## Brainstorm
+> Write down 4 high level-things a computer can do.
+
 They can do the last of these in many different ways,
-including through a keyboard and mouse, or touch screen interfaces, or speech recognition using systems.
+including through a keyboard and mouse, or touch screen interfaces, or speech recognition systems.
 While such hardware interfaces are becoming more commonplace, most interaction is still
 done using screens, mice, touchpads and keyboards.
 
@@ -43,9 +46,9 @@ difficult, just a vocabulary of commands and a simple grammar for using them.
 This is what the shell provides - a simple language and a **command-line interface** 
 to use it through. 
 
-The heart of a command-line interface is a **read-evaluate-print loop** (REPL) called
-so because when you type a command and press <kbd>Return</kbd>.
-The shell
+The heart of a command-line interface is a **read-evaluate-print loop** (REPL) so-called
+because when you type a command and press <kbd>Return</kbd>,
+the shell
 reads it,
 executes (or "evaluates" it),
 prints the output,
@@ -61,6 +64,8 @@ the Bourne Again SHell
 (so-called because it's derived from a shell written by Stephen Bourne).
 Bash is the default shell on most modern implementations of Unix
 and in most packages that provide Unix-like tools for Windows.
+
+* 'Shell', 'Bash', 'Unix', 'Linux' - at this stage, used interchangeably
 
 ### What does it look like?
 
@@ -94,7 +99,7 @@ command doesn't always require an argument or a flag.
 In the second line of the example above, our **command** is `ls`, with a **flag** `-F` and an
 **argument** `/`. Each part is separated by spaces: if you omit the space 
 between `ls` and `-F` the shell will look for a command called `ls-F`, which 
-doesn't exist. Also, capitalization matters: `LS` is different to `ls`. 
+doesn't exist. Also, capitalisation matters: `LS` is different to `ls`. 
 
 Next we see the output that our command produced. In this case it is a listing 
 of files and folders in a location called `/` - we'll cover what all these mean 
@@ -166,7 +171,7 @@ commands can be written into a *script*, improving the reproducibility of
 workflows and allowing you to repeat them easily.
 
 In addition, the command line is often the easiest way to interact with remote machines and supercomputers.
-Familiarity with the shell is near essential to run a variety of specialized tools and resources
+Familiarity with the shell is near essential to run a variety of specialised tools and resources
 including high-performance computing systems.
 As clusters and cloud computing systems become more popular for scientific data crunching,
 being able to interact with the shell is becoming a necessary skill.
