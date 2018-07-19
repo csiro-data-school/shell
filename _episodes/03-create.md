@@ -1,6 +1,6 @@
 ---
 title: "Working With Files and Directories"
-teaching: 25
+teaching: 35
 exercises: 10
 questions:
 - "How can I create, copy, and delete files and directories?"
@@ -16,7 +16,6 @@ keypoints:
 - "`rm path` removes (deletes) a file."
 - "Use of the Control key may be described in many ways, including `Ctrl-X`, `Control-X`, and `^X`."
 - "The shell does not have a trash bin: once something is deleted, it's really gone."
-- "Depending on the type of work you do, you may need a more powerful text editor than Nano."
 ---
 
 We now know how to explore files and directories,
@@ -30,7 +29,7 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell
+/Users/nelle/DATASCHOOL/data-shell
 ~~~
 {: .output}
 
@@ -112,89 +111,15 @@ $ ls -F thesis
 {: .language-bash}
 
 Let's change our working directory to `thesis` using `cd`,
-then run a text editor called Nano to create a file called `draft.txt`:
 
-~~~
-$ cd thesis
-$ nano draft.txt
-~~~
-{: .language-bash}
 
-> ## Which Editor?
+> ## Creating Files 
 >
-> When we say, "`nano` is a text editor," we really do mean "text": it can
-> only work with plain character data, not tables, images, or any other
-> human-friendly media. We use it in examples because it is one of the 
-> least complex text editors. However, because of this trait, it may 
-> not be powerful enough or flexible enough for the work you need to do
-> after this workshop. On Unix systems (such as Linux and Mac OS X),
-> many programmers use [Emacs](http://www.gnu.org/software/emacs/) or
-> [Vim](http://www.vim.org/) (both of which require more time to learn), 
-> or a graphical editor such as
-> [Gedit](http://projects.gnome.org/gedit/). On Windows, you may wish to
-> use [Notepad++](http://notepad-plus-plus.org/).  Windows also has a built-in
-> editor called `notepad` that can be run from the command line in the same
-> way as `nano` for the purposes of this lesson.  
->
-> No matter what editor you use, you will need to know where it searches
-> for and saves files. If you start it from the shell, it will (probably)
-> use your current working directory as its default location. If you use
-> your computer's start menu, it may want to save files in your desktop or
-> documents directory instead. You can change this by navigating to
-> another directory the first time you "Save As..."
-{: .callout}
-
-Let's type in a few lines of text.
-Once we're happy with our text, we can press `Ctrl-O` (press the Ctrl or Control key and, while
-holding it down, press the O key) to write our data to disk
-(we'll be asked what file we want to save this to:
-press Return to accept the suggested default of `draft.txt`).
-
-![Nano in Action](../fig/nano-screenshot.png)
-
-Once our file is saved, we can use `Ctrl-X` to quit the editor and
-return to the shell.
-
-> ## Control, Ctrl, or ^ Key
->
-> The Control key is also called the "Ctrl" key. There are various ways
-> in which using the Control key may be described. For example, you may
-> see an instruction to press the Control key and, while holding it down,
-> press the X key, described as any of:
->
-> * `Control-X`
-> * `Control+X`
-> * `Ctrl-X`
-> * `Ctrl+X`
-> * `^X`
-> * `C-x`
->
-> In nano, along the bottom of the screen you'll see `^G Get Help ^O WriteOut`.
-> This means that you can use `Control-G` to get help and `Control-O` to save your
-> file.
-{: .callout}
-
-`nano` doesn't leave any output on the screen after it exits,
-but `ls` now shows that we have created a file called `draft.txt`:
-
-~~~
-$ ls
-~~~
-{: .language-bash}
-
-~~~
-draft.txt
-~~~
-{: .output}
-
-> ## Creating Files a Different Way
->
-> We have seen how to create text files using the `nano` editor.
 > Now, try the following command in your home directory:
 >
 > ~~~
 > $ cd                  # go to your home directory
-> $ touch my_file.txt
+> $ touch draft.txt
 > ~~~
 > {: .language-bash}
 >
@@ -257,7 +182,7 @@ $ ls
 {: .callout}
 
 Let's re-create that file
-and then move up one directory to `/Users/nelle/Desktop/data-shell` using `cd ..`:
+and then move up one directory to `/Users/nelle/DATASCHOOL/data-shell` using `cd ..`:
 
 ~~~
 $ pwd
@@ -265,12 +190,12 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell/thesis
+/Users/nelle/DATASCHOOL/data-shell/thesis
 ~~~
 {: .output}
 
 ~~~
-$ nano draft.txt
+$ touch draft.txt
 $ ls
 ~~~
 {: .language-bash}
@@ -301,7 +226,7 @@ rm: cannot remove `thesis': Is a directory
 This happens because `rm` by default only works on files, not directories.
 
 To really get rid of `thesis` we must also delete the file `draft.txt`.
-We can do this with the [recursive](https://en.wikipedia.org/wiki/Recursion) option for `rm`:
+We can do this with the [recursive](https://en.wikipedia.org/wiki/Recursion) flag for `rm`:
 
 ~~~
 $ rm -r thesis
@@ -344,8 +269,8 @@ $ rm -r thesis
 {: .callout}
 
 Let's create that directory and file one more time.
-(Note that this time we're running `nano` with the path `thesis/draft.txt`,
-rather than going into the `thesis` directory and running `nano` on `draft.txt` there.)
+(Note that this time we're running `touch` with the path `thesis/draft.txt`,
+rather than going into the `thesis` directory and running `touch` on `draft.txt` there.)
 
 ~~~
 $ pwd
@@ -353,13 +278,13 @@ $ pwd
 {: .language-bash}
 
 ~~~
-/Users/nelle/Desktop/data-shell
+/Users/nelle/DATASCHOOL/data-shell
 ~~~
 {: .output}
 
 ~~~
 $ mkdir thesis
-$ nano thesis/draft.txt
+$ touch thesis/draft.txt
 $ ls thesis
 ~~~
 {: .language-bash}
@@ -604,17 +529,17 @@ but it does find the copy in `thesis` that we didn't delete.
 > {: .solution}
 {: .challenge}
 
-> ## Organizing Directories and Files
+> ## Organising Directories and Files
 >
 > Jamie is working on a project and she sees that her files aren't very well
-> organized:
+> organised:
 >
 > ~~~
 > $ ls -F
 > ~~~
 > {: .language-bash}
 > ~~~
-> analyzed/  fructose.dat    raw/   sucrose.dat
+> analysed/  fructose.dat    raw/   sucrose.dat
 > ~~~
 > {: .output}
 >
@@ -627,11 +552,11 @@ but it does find the copy in `thesis` that we didn't delete.
 > ~~~
 > {: .language-bash}
 > ~~~
-> analyzed/   raw/
+> analysed/   raw/
 > ~~~
 > {: .output}
 > ~~~
-> $ ls analyzed
+> $ ls analysed
 > ~~~
 > {: .language-bash}
 > ~~~
@@ -641,12 +566,12 @@ but it does find the copy in `thesis` that we didn't delete.
 >
 > > ## Solution
 > > ```
-> > mv *.dat analyzed
+> > mv *.dat analysed
 > > ```
 > > {: .language-bash}
-> > Jamie needs to move her files `fructose.dat` and `sucrose.dat` to the `analyzed` directory.
+> > Jamie needs to move her files `fructose.dat` and `sucrose.dat` to the `analysed` directory.
 > > The shell will expand *.dat to match all .dat files in the current directory.
-> > The `mv` command then moves the list of .dat files to the "analyzed" directory.
+> > The `mv` command then moves the list of .dat files to the "analysed" directory.
 > {: .solution}
 {: .challenge}
 
