@@ -58,6 +58,7 @@ In the lesson, you will find out how to access the data in this folder.
 >
 > #### Reference 
 > [How to Use Terminal on a Mac](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/)
+>
 > ### Linux
 > The default shell for Linux operating systems is usually Bash.
 > On most versions of Linux, it is accessible by running the [(Gnome) Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
@@ -65,5 +66,4 @@ In the lesson, you will find out how to access the data in this folder.
 > or [xterm](https://en.wikipedia.org/wiki/Xterm),
 > which can be found via the applications menu or the search bar.
 > If your machine is set up to use something other than bash, you can run it by opening a terminal and typing `bash`.
->
 {: .callout}
