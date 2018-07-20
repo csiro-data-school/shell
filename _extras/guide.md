@@ -172,7 +172,7 @@ as long as learners using Windows do not run into roadblocks such as:
     extensions are essentially there to help computers (and human
     readers) understand file content and are not a requirement of files
     (covered briefly in [Navigating Files and Directories]({{ page.root }}{% link _episodes/02-filedir.md %})).
-    This can be done in the [Pipes and Filters]({{ page.root }}{% link _episodes/04-pipefilter.md %}) section by showing that you
+    This can be done in the [Pipes and Filters]({{ page.root }}{% link _episodes/07-pipefilter.md %}) section by showing that you
     can redirect standard output to a file without the .txt extension
     (e.g., lengths), and that the resulting file is still a perfectly usable text file.
     Make the point that if double-clicked in the GUI, the computer will
