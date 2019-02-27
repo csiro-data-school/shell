@@ -7,7 +7,16 @@ root: .
 1. Make a DATASCHOOL folder. Please make it inside your 'home' folder (which is named with your ident). For example: 
 
 Windows:
+
+<a href="{{ page.root }}/fig/folder-pc.jpeg">
+  <img src="{{ page.root }}/fig/folder-pc.jpeg" alt="Folder location and path for pc" />
+</a>
+
 Mac:
+
+<a href="{{ page.root }}/fig/folder-mac.png">
+  <img src="{{ page.root }}/fig/folder-mac.png" alt="Folder location and path for mac" />
+</a>
 
 You need to download some files to follow this lesson:
 
