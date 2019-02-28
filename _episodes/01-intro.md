@@ -67,7 +67,7 @@ the Bourne Again SHell
 Bash is the default shell on most modern implementations of Unix
 and in most packages that provide Unix-like tools for Windows.
 
-* 'Shell', 'Bash', 'Unix', 'Linux' - at this stage, used interchangeably
+* 'Shell', 'Bash', 'Unix', 'Linux' - while there are subtle differences in meaning between these words, in most contexts they are used interchangeably and mean the same thing
 
 ### What does it look like?
 
