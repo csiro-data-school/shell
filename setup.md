@@ -6,13 +6,13 @@ root: .
 
 1. Make a DATASCHOOL folder. Please make it inside your 'home' folder (which is named with your ident). For example: 
 
-Windows:
+Folder location on **windows**:
 
 <a href="{{ page.root }}/fig/folder-pc.JPG">
   <img src="{{ page.root }}/fig/folder-pc.JPG" alt="Folder location and path for pc" />
 </a>
 
-Mac:
+Folder location on **Mac**:
 
 <a href="{{ page.root }}/fig/folder-mac.png">
   <img src="{{ page.root }}/fig/folder-mac.png" alt="Folder location and path for mac" />
@@ -22,7 +22,13 @@ You need to download some files to follow this lesson:
 
 2. Download [data-shell.zip]({{ page.root }}/data/data-shell.zip) and move the file to your new DATASCHOOL folder.
 3. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called **data-shell** in your DATASCHOOL folder.
-4. Open a terminal and type `cd`, then press the Enter key. That last step will make sure you start with your home folder as your working directory.
+4. Open a shell (you might want to make yourself a shortcut!):
+
+    **Windows:** Click on your search 'circle', search for 'Git Bash', open the desktop app. This is your shell. 
+    
+    **Mac:** Go to Finder > Applications > Utilities > Terminal. 'Terminal' is your shell. 
+    
+5. Within your shell, type `cd`, then press the Enter key. That last step will make sure you start with your home folder as your working directory.
 
 In the lesson, you will find out how to access the data in this folder.  
 
