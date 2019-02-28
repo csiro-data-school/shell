@@ -8,8 +8,8 @@ root: .
 
 Windows:
 
-<a href="{{ page.root }}/fig/folder-pc.jpeg">
-  <img src="{{ page.root }}/fig/folder-pc.jpeg" alt="Folder location and path for pc" />
+<a href="{{ page.root }}/fig/folder-pc.JPG">
+  <img src="{{ page.root }}/fig/folder-pc.JPG" alt="Folder location and path for pc" />
 </a>
 
 Mac:
