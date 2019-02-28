@@ -6,19 +6,19 @@ root: .
 
 1. Make a DATASCHOOL folder. Please make it inside your 'home' folder (which is named with your ident). For example: 
 
-Folder location on **windows**:
+    Folder location on **windows**:
 
-<a href="{{ page.root }}/fig/folder-pc.JPG">
-  <img src="{{ page.root }}/fig/folder-pc.JPG" alt="Folder location and path for pc" />
-</a>
+    <a href="{{ page.root }}/fig/folder-pc.JPG">
+      <img src="{{ page.root }}/fig/folder-pc.JPG" alt="Folder location and path for pc" />
+    </a>
 
-Folder location on **Mac**:
+    Folder location on **Mac**:
 
-<a href="{{ page.root }}/fig/folder-mac.png">
-  <img src="{{ page.root }}/fig/folder-mac.png" alt="Folder location and path for mac" />
-</a>
+    <a href="{{ page.root }}/fig/folder-mac.png">
+     <img src="{{ page.root }}/fig/folder-mac.png" alt="Folder location and path for mac" />
+    </a>
 
-You need to download some files to follow this lesson:
+    You need to download some files to follow this lesson:
 
 2. Download [data-shell.zip]({{ page.root }}/data/data-shell.zip) and move the file to your new DATASCHOOL folder.
 3. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called **data-shell** in your DATASCHOOL folder.
