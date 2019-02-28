@@ -18,6 +18,11 @@ keypoints:
 - "The shell's main advantages are its high action-to-keystroke ratio, its support for automating repetitive tasks, and its capacity to access networked machines."
 - "The shell's main disadvantages are its primarily textual nature and how cryptic its commands and operation can be."
 ---
+
+> ## Brainstorm
+> Write down 4 high level-things a computer can do.
+{: .challenge}
+
 ### Background
 At a high level, computers do four things:
 
@@ -25,9 +30,6 @@ At a high level, computers do four things:
 -   store data
 -   communicate with each other, and
 -   interact with us
-
-> ## Brainstorm
-> Write down 4 high level-things a computer can do.
 
 They can do the last of these in many different ways,
 including through a keyboard and mouse, or touch screen interfaces, or speech recognition systems.
